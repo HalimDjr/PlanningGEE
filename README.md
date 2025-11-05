@@ -42,19 +42,50 @@ Elle est destinée aux **enseignants encadrants** et aux **étudiants binômes**
 | **Next.js** | Framework Frontend |
 | **React** | Construction des interfaces |
 | **Tailwind CSS** | Stylisation moderne et responsive |
-| **Node.js / Express / API REST** | Communication avec le backend |
-| **JWT Auth** | Sécurisation et gestion des sessions |
+| **Node.js / Express / API REST** | Logique serveur et endpoints |
+| **Prisma ORM** | Traitement et mapping de la base de données |
+| **JWT Auth** | Sécurisation des sessions utilisateur |
 
----
+### 🗄️ Base de données & Prisma
 
-## 📦 Installation & Lancement
+La base de données est gérée via **Prisma ORM**, permettant :
+- Migration et versionnement du schéma (`prisma migrate`)
+- Accès optimisé aux données via un **client généré automatiquement**
+- Sécurité des requêtes SQL (pas d’injections)
 
+#### 📌 Commandes Prisma utiles
 ```bash
+# Générer le client Prisma
+npx prisma generate
+
+# Appliquer les migrations
+npx prisma migrate dev
+
+# Visualiser la base de données (Prisma Studio)
+npx prisma studio
+```
+📦 Installation & Lancement
 # Installer les dépendances
 npm install
+
+# Configurer la base de données dans .env
+DATABASE_URL="mysql://user:password@localhost:3306/gestion_soutenance"
+
+# Générer Prisma Client
+npx prisma generate
 
 # Lancer le serveur de développement
 npm run dev
 
 # Accéder à l'application
 http://localhost:3000
+
+🎨 Aperçu Interface
+![Enseignant - indisponibilité ](./assets/image1.png)
+![Enseignant - validation des thèmes](./assets/image2.png)
+![Etudiant - choisir thème](./assets/image3.png)
+
+🎯 Objectif du Projet
+
+Cette application vise à simplifier l'organisation des soutenances, réduire les erreurs liées à la gestion manuelle
+et fluidifier la communication entre les étudiants et leurs encadrants.
