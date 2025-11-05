@@ -81,9 +81,9 @@ npm run dev
 http://localhost:3000
 
 🎨 Aperçu Interface
-![Enseignant - indisponibilité ](./assets/image1.png)
-![Enseignant - validation des thèmes](./assets/image2.png)
-![Etudiant - choisir thème](./assets/image3.png)
+![Enseignant - indisponibilité ](./assets/Image1.png)
+![Enseignant - validation des thèmes](./assets/Image2.png)
+![Etudiant - choisir thème](./assets/Image3.png)
 
 🎯 Objectif du Projet
 
